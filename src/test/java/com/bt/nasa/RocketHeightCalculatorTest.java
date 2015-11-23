@@ -31,6 +31,8 @@ public class RocketHeightCalculatorTest {
     double thrust = RocketConstants.DOWNWARD_FORCE + RocketConstants.K_CONSTANT;
 
     RocketCalculator rocketCalculator = new RocketCalculator();
+
+    //TODO Could use anonymous subclass of rocketCalculator and override calculateQValue, as per shouldCalculateBurnoutVelocity test
     double qValue = rocketCalculator.calculateQValue(thrust);
     double xValue = rocketCalculator.calculateXValue(thrust);
 
